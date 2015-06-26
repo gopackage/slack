@@ -174,7 +174,7 @@ func (c *Client) DialAndListen(token string, handler Handler) (err error) {
 
 	defer c.ws.Close()
 
-	// Now listen to the connection sending events to the event handler.
+	// Listen to the connection sending events to the event handler.
 	msg := make([]byte, 4096)
 	watchdog := time.AfterFunc(25*time.Second, func() {
 		c.Write(map[string]interface{}{"type": "ping"})

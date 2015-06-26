@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/metamech/bitbot/slack/auth"
-	"github.com/metamech/bitbot/slack/rtm"
+	"github.com/gopackage/slack/auth"
+	"github.com/gopackage/slack/rtm"
 )
 
 const (
